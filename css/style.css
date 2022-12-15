@@ -490,8 +490,8 @@ body {
   }
   .detalhes-img img {
     border: none;
-    height: 300px;
-    width: 400px;
+    height: inherit;
+    width: inherit;
   }
   .detalhes {
     gap: 0px;
@@ -533,6 +533,9 @@ body {
   .detalhes-img {
     grid-row: 2 / 3;
     justify-self: center;
+  }
+  .detalhes-img img {
+    object-fit:contain;
   }
   .detalhes-info {
     padding: 0 0px;
@@ -671,6 +674,7 @@ body {
   }
   .footer-contato ul {
     margin-top: 40px;
+    font-size: 1rem
   }
   .footer .titulo::before {
     width: 35px;
