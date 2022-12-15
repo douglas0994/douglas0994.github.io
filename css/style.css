@@ -566,8 +566,8 @@ body {
 
 @media(max-width: 400px) {
   .detalhes-menu li {
-    width: 60px;
-    padding: 10px 25px;
+    width: 90px;
+    padding: 20px 20px;
   }
 
 }
