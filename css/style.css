@@ -535,7 +535,7 @@ body {
     justify-self: center;
   }
   .detalhes-info {
-    padding: 0 20px;
+    padding: 0 0px;
   }
   .detalhes-info p {
     margin-top: 16px;
