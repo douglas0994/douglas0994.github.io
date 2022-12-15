@@ -550,7 +550,7 @@ body {
 }
 
 @media(max-width: 400px) {
-  .detalhes-menu ul li {
+  .detalhes-menu li {
     width: 60px;
     padding: 10px 25px;
   }
