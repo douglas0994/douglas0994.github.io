@@ -202,9 +202,13 @@ body {
     margin-bottom: 2px;
     padding-right: 16px;
   }
-
 }
 
+@media(max-width: 400px) {
+  .frase-intro {
+    padding: 0px;
+  }
+}
 
 /* PORTOLIO */
 
