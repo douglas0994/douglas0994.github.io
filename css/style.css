@@ -508,7 +508,7 @@ body {
   }
   .detalhes-menu {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 12px;
   }
   .detalhes-menu .titulo::before {
     width: 36px;
@@ -521,7 +521,7 @@ body {
   }
   .detalhes-menu ul li {
     font-size: 0.875rem;
-    padding: 15px 35px;
+    padding: 10px 10px;
   }
   .detalhes-menu li:hover::after {
     width: 0%;
@@ -688,6 +688,13 @@ body {
 .js-tabmenu li.ativo {
   border-bottom: 4px solid #424242;
   background: #ffffff;
+}
+
+@media (max-width: 600px) {
+  .js-tabmenu li.ativo {
+    border-bottom: none;
+    
+  }
 }
 
 .js-tabcontent section {
