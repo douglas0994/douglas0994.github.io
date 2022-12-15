@@ -1,0 +1,231 @@
+.intro-produtos {
+  background: url(../img/bg-produtos.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.produtos-interno {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.produtos-interno section {
+  margin-bottom: 40px;
+}
+
+.produtos {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  padding-top: 40px;
+  gap: 10px;
+}
+
+.produtos-tipo{
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1 / 4;
+}
+
+.produtos-passeio {
+  background: url(../img/produtos/bikcraft-passeio-1.jpg) no-repeat center;
+}
+.produtos-esporte{
+  background: url(../img/produtos/bikcraft-esporte-1.jpg) no-repeat center;
+}
+.produtos-retro{
+  background: url(../img/produtos/bikcraft-retro-1.jpg) no-repeat center;
+}
+
+.produtos h2 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  font-size: 36px;
+}
+
+.produtos h2::after,
+.produtos h2::before {
+  content: '';
+  width: 60px;
+  height: 2px;
+  background: white;
+  display: block;
+  margin: 6px auto;
+}
+
+.produtos-logo {
+  background: black;
+  display: flex;
+  align-items: center;
+}
+
+.produtos-img {
+ grid-column: 1 / 3;
+ margin-top: 8px;
+}
+
+.produtos-img img {
+  height: 100%;
+  object-fit:cover;
+  object-position: center;
+}
+
+.produtos-info {
+  background: black;
+  grid-column: 3 /5;
+  margin-top: 8px;
+}
+
+.produtos-info p {
+  padding: 30px 40px;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.produtos-info ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.produtos-info ul li{
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fec63e;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  margin-top: 4px;
+  padding: 18px 0;
+}
+
+.produtos-info ul li:nth-of-type(odd) {
+  margin-right: 3px;
+}
+
+
+
+/* ORÇAMENTO */
+
+.orcamento-bg {
+  background: black;
+  padding: 60px 0;
+}
+
+.orcamento {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.orcamento-bg h2 {
+  color: #fec63e;
+  margin: 0 auto;
+}
+
+.orcamento-bg h2::after {
+  content: '';
+  width: 80px;
+  height: 3px;
+  background: #fec63e;
+  display: block;
+}
+
+
+.orcamento-dados {
+  margin-top: 40px;
+}
+
+.orcamento-dados h3{
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #fec63e;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.orcamento-dados span {
+  font-size: 18px;
+  line-height: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  display: block;
+}
+
+.orcamento-dados span:nth-of-type(2){
+  margin-bottom: 40px;
+}
+
+.orcamento-dados p {
+  margin: 8px 0px;
+}
+
+.orcamento-dados ul li{
+  padding: 8px 4px;
+  font-size: 14px;
+}
+
+.orcamento-dados ul li:nth-child(odd) {
+  background: #1d1d1d;
+}
+
+/* RESPONSIVO */
+
+@media only screen and (max-width: 900px) {
+  .produtos-info p {
+    padding: 20px 30px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .produtos-info ul li{
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+
+  @media only screen and (max-width: 767px) {
+    .produtos {
+      grid-template-columns: 1fr;
+      margin: 0 auto;
+      max-width: 400px;
+      gap: 0px;
+    }
+    .produtos-interno {
+      padding-top: 20px;
+    }
+    .produtos-tipo,
+    .produtos-img,
+    .produtos-info{
+      grid-column: inherit;
+    }
+    .orcamento-bg {
+      margin-top: 40px;
+    }
+    .orcamento {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    .orcamento-dados{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .orcamento-dados ul li,
+    .orcamento-dados span,
+    .orcamento-dados h3{
+      font-size: 14px;
+    }
+  
+    .orcamento-dados p {
+      grid-column: 2/3;
+    }
+    .orcamento-dados ul {
+      grid-column: 2/3;
+      font-size: 12px;
+    }
+}
+

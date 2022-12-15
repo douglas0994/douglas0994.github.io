@@ -1,0 +1,25 @@
+.intro-portfolio {
+  background: url(../img/bg-portfolio.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.quote-clientes {
+  padding: 60px;
+  max-width: 460px;
+  margin: 0 auto;
+  color: black;
+}
+
+.quote-clientes p {
+  font-size: 18px;
+  line-height: 25px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.quote-clientes cite {
+  font-size: 18px;
+  float: right;
+  font-weight: bold;
+  font-style: normal;
+}

@@ -1,0 +1,274 @@
+.introducao-bg {
+  background: url(../img/bg.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.introducao {
+  text-align: center;
+  width: 100%;
+  height: 380px;
+  margin-top: 92px;
+}
+
+.introducao h1 {
+  font-size: 48px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.quote-intro {
+  max-width: 320px;
+  margin: 0 auto 40px auto;
+}
+
+.quote-intro p {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.quote-intro p::after,
+.quote-intro p::before {
+  content: '';
+  width: 80px;
+  height: 3px;
+  background: white;
+  display: block;
+  margin: 14px auto 10px auto;
+}
+
+.quote-intro cite {
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-size: 14px;
+}
+
+/* produtos */
+
+.produtos-home {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.produtos-lista {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.produtos-logo {
+  background: black;
+  padding: 20px;
+}
+
+.produtos-logo img {
+  margin: 0 auto;
+}
+
+.produtos-item {
+  background-color: #fec63e;
+  margin-bottom: 40px;
+}
+
+.produtos-item h3 {
+  text-transform: uppercase;
+  margin-top: 20px;
+  font-size: 18px;
+  color: black;
+}
+
+.produtos-item h3::after {
+  content: '';
+  width: 60px;
+  height: 3px;
+  background: black;
+  display: block;
+  margin: 4px auto;
+}
+
+.produtos-item p {
+  padding: 10px 20px 20px 20px;
+  color: black;
+}
+.call {
+  text-align: center;
+  margin-top: 20px;
+}
+.call p {
+  font-size: 14px;
+  color: black;
+  margin-bottom: 12px;
+}
+
+
+/* Portfólio */
+
+.portfolio{
+  background: black;
+  padding: 40px;
+  position: relative;
+}
+
+.portfolio h2 {
+  color: #fec63e;
+  margin-bottom: 40px;
+}
+.portfolio .subtitulo::after {
+  background-color: #fec63e;
+}
+
+.portfolio-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.portfolio-img li:last-child {
+  grid-column: 1 / 3;
+}
+
+.portfolio .call p {
+  color: white;
+}
+
+/* qualidade */
+
+.qualidade {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.qualidade-img {
+  display: flex;
+  justify-content: center;
+}
+
+
+.qualidade-lista {
+  display: flex;
+  color: black;
+  margin-bottom: 40px;
+  justify-content: center;
+  padding: 0px 20px;
+}
+
+.qualidade-lista li {
+  text-align: center;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+.qualidade-lista li:nth-child(2) {
+  min-width: 30ch ;
+}
+
+.qualidade .call {
+  margin-top: 60px;
+}
+
+.qualidade-lista li h3 {
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+.qualidade-lista li h3::after {
+  content: '';
+  width: 60px;
+  height: 3px;
+  background: black;
+  display: block;
+  margin: 6px auto;
+}
+
+/* FRASE QUOTE */
+
+.frase {
+  background: url(../img/bg-footer.jpg) no-repeat center;
+  background-size: cover;
+  text-align: center;
+  height: 220px;
+}
+
+.frase blockquote {
+  max-width: 55ch;
+  padding: 40px 0;
+}
+
+.frase blockquote p {
+  font-style: italic;
+}
+
+.frase blockquote p::after,
+.frase blockquote p::before {
+  content: '';
+  width: 60px;
+  height: 3px;
+  background-color: white;
+  margin: 14px auto;
+  display: block;
+}
+
+.frase blockquote cite {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: .2em;
+  font-size: 14px;
+}
+
+
+/* RESPONSIVO */
+
+@media only screen and (max-width: 767px) {
+  .introducao {
+    margin-top: 0px;
+    height: 350px;
+  }
+  .introducao h1 {
+    padding-top: 40px;
+    font-size: 32px;
+    margin-top: 0px;
+  }
+  .produtos-lista {
+    margin: 10px auto;
+    max-width: 300px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .produtos-item {
+    margin-bottom: 0px;
+  }
+  .portfolio-img {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .portfolio-img li:last-child {
+    grid-column: 1;
+  }
+
+  .qualidade-lista {
+    flex-direction: column;
+  }
+  .qualidade-lista::before {
+    content: '';
+    width: 250px;
+    height: 150px;
+    display: block;
+    background: url(../img/bikcraft-qualidade.svg) no-repeat center;
+    margin: 0 auto;
+  }
+  .qualidade-img img {
+    display: none;
+  }
+  .qualidade-lista li:nth-child(2) {
+    min-width: inherit;
+  }
+  
+}

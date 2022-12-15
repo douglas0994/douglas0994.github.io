@@ -1,0 +1,157 @@
+/* RESET CSS */
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+p,
+blockquote,
+dd {
+  margin: 0px;
+}
+
+ul {
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* container */
+
+.container {
+  box-sizing: border-box;
+  max-width: 1000px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* BOTÃO */
+.btn {
+  color: #fec63f;
+  letter-spacing: .1em;
+  text-transform: uppercase ;
+  border: 4px solid #fec63f;
+  padding: 10px 30px;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.btn:hover {
+  color: white;
+  border: 4px solid white;
+  transition: .3s
+}
+
+.btn-preto:hover {
+  color: black;
+  border: 4px solid black;
+  transition: .3s;
+}
+
+/* SUBTITULOS/ TITULOS DAS PAGINAS */
+.subtitulo {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: black;  
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.subtitulo::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background-color: black;
+  display: block;
+  margin: 8px auto;
+}
+
+/* FORMULÁRIOS DAS PAGINAS DE PRODUTOS E CONTATO */
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.form ::placeholder {
+  color: #d7d7d7;
+}
+
+.form label {
+  margin-top: 8px;
+  font-size: 18px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.form input {
+  border: 4px solid #fec63e;
+  background: none;
+  padding: 7px 10px;
+  margin: 8px 0 8px 0;
+  border-radius: 2px;
+  
+  color: white;
+  font-size: 14px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  outline: none;
+}
+
+.form textarea {
+  border: 4px solid #fec63e;
+  background: none;
+  padding: 7px 10px;
+  margin: 8px 0;
+  border-radius: 2px;
+
+  color: white;
+  font-size: 14px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  outline: none;
+}
+
+.form button {
+  background: none;
+  border: 4px solid #fec63e;
+  padding: 10px 30px;
+  color: #fec63e;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 8px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: .1em;
+  width: max-content;
+  transition: all .3s cubic-bezier(0.4, 0, 1, 1);
+  cursor: pointer;
+}
+
+.form button:hover {
+  color: white;
+  border: 4px solid white;
+}
+
