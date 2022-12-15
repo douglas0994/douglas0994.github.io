@@ -163,6 +163,18 @@ body {
 }
 
 @media(max-width: 600px) {
+  .frase-intro {
+    gap: 8px;
+  }
+  .frase-intro .whats {
+    display: none;
+  }
+  .frase-intro img {
+    margin: 0px;
+  }
+  .frase-intro a {
+    font-size: 0.875rem;
+  }
   .intro {
     grid-template-columns: 1fr;
     padding-bottom: 60px;
