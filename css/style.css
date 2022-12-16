@@ -62,13 +62,10 @@ body {
   color: #424242;
   background: rgb(243, 243, 243);
   padding: 4px 8px;
- 
 }
 
 .frase-intro a:hover {
   background: white;
- 
- 
 }
 
 .frase-intro img {
@@ -176,7 +173,7 @@ body {
     font-size: 0.875rem;
   }
   .frase-intro a:last-child {
-    padding: 4px 24px;
+    padding: 4px 20px;
   }
   .intro {
     grid-template-columns: 1fr;
