@@ -57,12 +57,20 @@ body {
 }
 
 .frase-intro a {
+<<<<<<< HEAD
   color: #424242;
   background: rgb(243, 243, 243);
   padding: 4px 8px;
   font-family: 'Cabin', sans-serif;
   font-size: 0.875rem;
   height: 20px;
+=======
+  border-radius: 0px 0px 0px 2px;
+  border: 2px solid rgb(243, 243, 243);
+  color: #424242;
+  background: rgb(243, 243, 243);
+  padding: 4px 8px;
+>>>>>>> 70bcf2d8b5c7c30dc2b6c9772b4235c9ec3de296
 }
 
 .frase-intro a:hover {
@@ -71,7 +79,11 @@ body {
 
 .frase-intro img {
   width: 18px;
+<<<<<<< HEAD
   height: 18px;
+=======
+  height: 19px;
+>>>>>>> 70bcf2d8b5c7c30dc2b6c9772b4235c9ec3de296
   display:inline-block;
   margin-right: 12px;
 }
@@ -168,10 +180,14 @@ body {
   }
   .frase-intro img {
     margin: 0px;
+    text-align: center;
   }
   .frase-intro a {
     font-size: 0.875rem;
     padding: 8px 22px;
+  }
+  .frase-intro a:last-child {
+    padding: 4px 20px;
   }
   .intro {
     grid-template-columns: 1fr;
