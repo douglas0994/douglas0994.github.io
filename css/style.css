@@ -49,8 +49,6 @@ body {
   justify-content: space-between; 
   align-items: center;
   gap: 20px;
-  padding-top: 2px;
-  padding-bottom: 2px;
 }
 
 .frase-intro a {
@@ -59,22 +57,21 @@ body {
 }
 
 .frase-intro a {
-  border-radius: 2px;
   color: #424242;
   background: rgb(243, 243, 243);
   padding: 4px 8px;
-  border: 2px solid white;
+  font-family: 'Cabin', sans-serif;
+  font-size: 0.875rem;
+  height: 20px;
 }
 
 .frase-intro a:hover {
   background: white;
- 
- 
 }
 
 .frase-intro img {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   display:inline-block;
   margin-right: 12px;
 }
@@ -174,6 +171,7 @@ body {
   }
   .frase-intro a {
     font-size: 0.875rem;
+    padding: 8px 22px;
   }
   .intro {
     grid-template-columns: 1fr;
@@ -222,8 +220,11 @@ body {
 .portfolio {
   display: flex;
   gap: 20px;
-  padding-top: 80px;
-  padding-bottom: 60px;
+  padding-bottom: 80px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: auto;
 }  
 
 #portfolio .titulo::before {
@@ -237,16 +238,14 @@ body {
 
 .portfolio-item {
   flex: 1;
-  min-width: 320px;
+  min-width: 240px;
+
 }  
 
 .portfolio-item img:hover {
   opacity: 0.8;
 }
 
-.portfolio-item img {
- height: 199px; 
-} 
 
 .portfolio-nome p {
   text-transform: uppercase;
@@ -323,6 +322,15 @@ body {
     height: 32px;
     background: url(/img/svg/portfolio-mobile.svg) no-repeat center;
   }
+  .portfolio-item h3 {
+    line-height: 1.2;
+  }
+  .bik-svg::before,
+.bik22-svg::before,
+.animais-svg::before,
+.flex-svg::before {
+
+}
 }
 
 /* DETALHES E PORTFOLIO */ 
